@@ -3,7 +3,11 @@
         <title>Calendar Generator</title>
     </head>
     <body>
-        <form>
+        <div class="inline">
+            Set Times:
+            <input type="checkbox" id="setTimes">
+            <button id="submit">Create Calendar</button>
+            
             <h3 class="day-header">Monday</h3>
             In:
             <input type="number" class="time">
@@ -101,8 +105,10 @@
                 <option value="am">AM</option>
                 <option value="pm">PM</option>
             </select>
-        </form>
-        
-        <script src="/js/script.js"></script>
+        </div>
+        <div id="result" class="inline">
+
+        </div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
